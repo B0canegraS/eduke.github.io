@@ -3,76 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eduke - Tienda sin fines de lucro para la educación">
-    <meta name="author" content="Eduke">
-    <title>Eduke - Tienda sin fines de lucro</title>
-    <link rel="icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eduke - Plataforma de Comercio Electrónico</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Eduke - Tienda sin fines de lucro</h1>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Eduke</h1>
+                <p>Plataforma de Comercio Electrónico sin fines de lucro</p>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
                     <li><a href="#productos">Productos</a></li>
-                    <li><a href="#donaciones">Donaciones</a></li>
+                    <li><a href="#atencion">Atención al Cliente</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section id="home">
-            <div class="hero">
-                <h2>Bienvenido a Eduke</h2>
-                <p>Apoya la educación a través de compras solidarias.</p>
+    <section id="introduccion" class="hero">
+        <div class="hero-content">
+            <h2>¡Bienvenido a Eduke!</h2>
+            <p>Una plataforma diseñada para brindar experiencia práctica en el comercio digital.</p>
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="productos-container">
+            <div class="producto-card">
+                <img src="https://via.placeholder.com/300" alt="Producto 1">
+                <h3>Producto A</h3>
+                <p>Descripción breve del producto A.</p>
+                <button>Comprar</button>
             </div>
-        </section>
-
-        <section id="productos">
-            <h2>Productos</h2>
-            <div class="products-list">
-                <!-- Aquí se pueden agregar productos estáticos -->
-                <div class="product">
-                    <img src="product1.jpg" alt="Producto 1">
-                    <h3>Libro Educativo</h3>
-                    <p>Descripción del producto.</p>
-                </div>
-                <div class="product">
-                    <img src="product2.jpg" alt="Producto 2">
-                    <h3>Material de Apoyo</h3>
-                    <p>Descripción del producto.</p>
-                </div>
+            <div class="producto-card">
+                <img src="https://via.placeholder.com/300" alt="Producto 2">
+                <h3>Producto B</h3>
+                <p>Descripción breve del producto B.</p>
+                <button>Comprar</button>
             </div>
-        </section>
+            <div class="producto-card">
+                <img src="https://via.placeholder.com/300" alt="Producto 3">
+                <h3>Producto C</h3>
+                <p>Descripción breve del producto C.</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
 
-        <section id="donaciones">
-            <h2>Donaciones</h2>
-            <p>Haz una donación para apoyar proyectos educativos.</p>
-            <button onclick="donar()">Donar ahora</button>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>¿Tienes alguna pregunta? Contáctanos.</p>
-            <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+    <section id="atencion">
+        <h2>Atención al Cliente</h2>
+        <p>Si tienes alguna pregunta o inquietud, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+        <button>Contáctanos</button>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Eduke. Todos los derechos reservados.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Eduke | Todos los derechos reservados</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
