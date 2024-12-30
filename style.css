@@ -1,110 +1,128 @@
-* {
+/* Global Styles */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8fafc;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
     color: #333;
 }
 
-header {
-    background-color: #80d1ff;
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+header, footer {
+    background-color: #8ccbf8;
     padding: 20px 0;
-    text-align: center;
+    color: #fff;
 }
 
-header h1 {
-    color: white;
-    font-size: 36px;
+.navbar .logo h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
+.navbar nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-nav li {
+.navbar nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
 
-nav a {
+.navbar nav ul li a {
     color: white;
-    text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 40px;
-    background-color: #ffffff;
-}
-
+/* Hero Section */
 .hero {
-    background-color: #cce7ff;
-    padding: 40px;
+    background-color: #a7cbe6;
+    padding: 50px 0;
     text-align: center;
-    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Products Section */
+#productos {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#productos h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.products-list {
+.productos-container {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
 }
 
-.product {
-    background-color: #f0f4f8;
+.producto-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
     padding: 20px;
     text-align: center;
-    border-radius: 8px;
-    width: 200px;
 }
 
-.product img {
+.producto-card img {
     width: 100%;
-    height: auto;
     border-radius: 8px;
 }
 
-button {
-    background-color: #66a8cc;
+.producto-card button {
+    background-color: #8ccbf8;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto-card button:hover {
+    background-color: #75a9d3;
+}
+
+/* Customer Support Section */
+#atencion {
+    background-color: #d1e8f6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#atencion button {
+    background-color: #8ccbf8;
     color: white;
     border: none;
     padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #4e8ba2;
+#atencion button:hover {
+    background-color: #75a9d3;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #80d1ff;
-    padding: 20px;
+/* Footer */
+footer .footer-content {
     text-align: center;
-    color: white;
 }
