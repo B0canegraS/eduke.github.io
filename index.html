@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eduke - Tienda sin fines de lucro para la educación">
+    <meta name="author" content="Eduke">
+    <title>Eduke - Tienda sin fines de lucro</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Eduke - Tienda sin fines de lucro</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#donaciones">Donaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h2>Bienvenido a Eduke</h2>
+                <p>Apoya la educación a través de compras solidarias.</p>
+            </div>
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="products-list">
+                <!-- Aquí se pueden agregar productos estáticos -->
+                <div class="product">
+                    <img src="product1.jpg" alt="Producto 1">
+                    <h3>Libro Educativo</h3>
+                    <p>Descripción del producto.</p>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Producto 2">
+                    <h3>Material de Apoyo</h3>
+                    <p>Descripción del producto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="donaciones">
+            <h2>Donaciones</h2>
+            <p>Haz una donación para apoyar proyectos educativos.</p>
+            <button onclick="donar()">Donar ahora</button>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta? Contáctanos.</p>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eduke. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
